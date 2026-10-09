@@ -1,0 +1,109 @@
+{
+  "trip": {
+    "origin": "United States",
+    "destination": "Beijing",
+    "travel_date": "2026-09-22",
+    "language": "en",
+    "segments": [
+      {
+        "id": "flight",
+        "scene": "us_air",
+        "carry": "cabin"
+      },
+      {
+        "id": "train",
+        "scene": "rail",
+        "carry": "person"
+      },
+      {
+        "id": "metro",
+        "scene": "beijing_subway",
+        "carry": "person"
+      },
+      {
+        "id": "museum",
+        "scene": "palace",
+        "carry": "person"
+      },
+      {
+        "id": "square",
+        "scene": "tiananmen",
+        "carry": "person"
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "demo-battery",
+      "name": "Travel power bank · 74 Wh",
+      "category": "power_bank",
+      "quantity": 1,
+      "attributes": {
+        "wh": 74,
+        "label_clear": true,
+        "damaged": false,
+        "recalled": false
+      },
+      "provenance": {
+        "wh": "demo",
+        "label_clear": "demo",
+        "damaged": "demo",
+        "recalled": "demo"
+      },
+      "image_ids": [],
+      "confirmed": false
+    },
+    {
+      "id": "demo-spray",
+      "name": "Travel hair spray · 100 mL",
+      "category": "aerosol",
+      "quantity": 1,
+      "attributes": {
+        "volume_ml": 100,
+        "pressurized": true,
+        "toiletry": true
+      },
+      "provenance": {
+        "volume_ml": "demo",
+        "pressurized": "demo",
+        "toiletry": "demo"
+      },
+      "image_ids": [],
+      "confirmed": false
+    },
+    {
+      "id": "demo-knife",
+      "name": "Multi-tool with an 80 mm blade",
+      "category": "knife",
+      "quantity": 1,
+      "attributes": {
+        "blade_mm": 80,
+        "ordinary_knife": true
+      },
+      "provenance": {
+        "blade_mm": "demo",
+        "ordinary_knife": "demo"
+      },
+      "image_ids": [],
+      "confirmed": false
+    },
+    {
+      "id": "demo-liquid",
+      "name": "Face cleanser · 80 mL",
+      "category": "liquid",
+      "quantity": 1,
+      "attributes": {
+        "volume_ml": 80,
+        "ordinary_liquid": true,
+        "flammable": false
+      },
+      "provenance": {
+        "volume_ml": "demo",
+        "ordinary_liquid": "demo",
+        "flammable": "demo"
+      },
+      "image_ids": [],
+      "confirmed": false
+    }
+  ]
+}

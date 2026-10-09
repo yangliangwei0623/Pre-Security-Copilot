@@ -1,0 +1,2 @@
+document.querySelector('#print-card').addEventListener('click',()=>window.print());
+document.querySelector('#copy-card').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(document.querySelector('.assistance').innerText);document.querySelector('#copy-card').textContent='已复制 / Copied';}catch{document.querySelector('#copy-card').textContent='请选中文字复制 / Select text to copy';}});

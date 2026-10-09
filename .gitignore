@@ -1,0 +1,14 @@
+.venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+.data/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+dist/*
+!dist/.gitkeep
+.cache/
+test-results/

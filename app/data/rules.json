@@ -1,0 +1,1239 @@
+{
+  "version": "beijing-2026-09-22.2",
+  "sources": [
+    {
+      "id": "rail2022",
+      "title": "铁路旅客禁止、限制携带和托运物品目录",
+      "url": "https://www.12306.cn/mormhweb/zxdt/202206/t20220617_37625.html",
+      "excerpt": "标志清晰的充电宝、锂电池，单块额定能量不超过100Wh；日用刀具（刀刃长度超过60毫米）禁止随身携带但可以托运。自喷压力容器单体不超过150毫升，每种1件，累计不超过600毫升。",
+      "verified_at": "2026-09-22",
+      "effective_from": "2022-07-01",
+      "effective_to": null,
+      "review_status": "verified"
+    },
+    {
+      "id": "bjmetro2015",
+      "title": "北京市轨道交通禁止携带物品目录（官方页面标注现行有效）",
+      "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/201905/t20190522_58453.html",
+      "excerpt": "菜刀、砍刀、美工刀等刀具及其他锐器、钝器；5个（含）以上打火机；包装上带有易燃、易爆等危险化学品标志或提示信息的日常用品类。",
+      "verified_at": "2026-09-22",
+      "effective_from": "2015-05-06",
+      "effective_to": null,
+      "review_status": "verified"
+    },
+    {
+      "id": "palace_items",
+      "title": "故宫博物院禁止携带物品目录",
+      "url": "https://www.dpm.org.cn/singles_detail/259832.html",
+      "excerpt": "锐器、钝器，如菜刀、砍刀等刀具；包装上带有易燃、易爆等危险化学品标志或提示信息的物品，如打火机、火柴，含酒精的饮品等。符合存包标准的可寄存。",
+      "verified_at": "2026-09-22",
+      "effective_from": null,
+      "effective_to": null,
+      "review_status": "verified"
+    },
+    {
+      "id": "tiananmen_visit",
+      "title": "天安门地区参观服务提示",
+      "url": "https://tamgw.beijing.gov.cn/zhengwugongkai/tzgg/202304/t20230410_2993773.html",
+      "excerpt": "严禁携带危险物品、管制器具和违禁物品，禁止携带“低慢小”航空器、打火机等可能影响社会秩序和公共安全的物品。按预约日期和时段前往。",
+      "verified_at": "2026-09-22",
+      "effective_from": "2023-04-10",
+      "effective_to": null,
+      "review_status": "verified"
+    },
+    {
+      "id": "tsa_knives",
+      "title": "TSA · Knives",
+      "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/knives",
+      "excerpt": "Carry On Bags: No. Checked Bags: Yes. Except rounded-blade, blunt non-serrated butter knives or plastic cutlery. Sharp objects in checked bags should be sheathed or securely wrapped.",
+      "verified_at": "2026-09-22",
+      "effective_from": null,
+      "effective_to": null,
+      "review_status": "verified"
+    },
+    {
+      "id": "tsa_liquids",
+      "title": "TSA · Liquids Rule",
+      "url": "https://www.tsa.gov/travel/security-screening/liquids-rule",
+      "excerpt": "A quart-sized bag of liquids, aerosols, gels, creams and pastes in carry-on baggage; containers 3.4 ounces (100 milliliters) or less per item. Exceptions and further screening may apply.",
+      "verified_at": "2026-09-22",
+      "effective_from": null,
+      "effective_to": null,
+      "review_status": "verified"
+    },
+    {
+      "id": "faa_batteries",
+      "title": "FAA PackSafe · Lithium Batteries",
+      "url": "https://www.faa.gov/hazmat/packsafe/lithium-batteries",
+      "excerpt": "Spare lithium batteries, including power banks, must be carried in carry-on baggage only. Lithium-ion batteries limited to 100Wh; larger batteries up to 160Wh require airline approval, up to two. Protect terminals. Damaged/recalled batteries likely to generate dangerous heat must not be carried.",
+      "verified_at": "2026-09-22",
+      "effective_from": null,
+      "effective_to": null,
+      "review_status": "verified"
+    },
+    {
+      "id": "caac_power",
+      "title": "民航局关于民航旅客携带“充电宝”乘机规定的公告",
+      "url": "https://www.caac.gov.cn/XXGK/XXGK/TZTG/201511/t20151105_11173.html",
+      "excerpt": "充电宝严禁托运；不超过100Wh无需航司批准；超过100Wh但不超过160Wh需航司批准且不超过两个；超过160Wh或无法判定额定能量的严禁携带。飞行中不得使用。",
+      "verified_at": "2026-09-22",
+      "effective_from": "2014-08-07",
+      "effective_to": null,
+      "review_status": "verified"
+    },
+    {
+      "id": "caac_ccc",
+      "title": "民航局：禁止旅客携带无3C标识及被召回的充电宝乘坐境内航班",
+      "url": "https://www.caac.gov.cn/XWZX/MHYW/202506/t20250626_227805.html",
+      "excerpt": "自6月28日起禁止旅客携带没有3C标识、3C标识不清晰、被召回型号或批次的充电宝乘坐境内航班。",
+      "verified_at": "2026-09-22",
+      "effective_from": "2025-06-28",
+      "effective_to": null,
+      "review_status": "verified"
+    }
+  ],
+  "rules": [
+    {
+      "id": "tsa_knife_cabin",
+      "scenes": [
+        "us_air"
+      ],
+      "categories": [
+        "knife"
+      ],
+      "carry": [
+        "cabin"
+      ],
+      "required": [],
+      "outcomes": [],
+      "default": {
+        "status": "prohibited",
+        "reason": {
+          "en": "Sharp knives are not permitted in TSA carry-on baggage. This category excludes blunt butter knives and plastic cutlery.",
+          "zh": "TSA禁止随身携带锐利刀具；本类别不包括钝头黄油刀和塑料餐具。"
+        }
+      },
+      "sources": [
+        "tsa_knives"
+      ],
+      "effective_from": null,
+      "effective_to": null
+    },
+    {
+      "id": "tsa_knife_checked",
+      "scenes": [
+        "us_air"
+      ],
+      "categories": [
+        "knife"
+      ],
+      "carry": [
+        "checked"
+      ],
+      "required": [
+        "ordinary_knife"
+      ],
+      "outcomes": [
+        {
+          "when": [
+            [
+              "ordinary_knife",
+              "eq",
+              false
+            ]
+          ],
+          "status": "unknown",
+          "reason": {
+            "en": "A specialist or potentially controlled blade requires separate checks.",
+            "zh": "专业或疑似管制刀具需单独核实。"
+          }
+        }
+      ],
+      "default": {
+        "status": "conditional",
+        "reason": {
+          "en": "TSA permits checked knives when sheathed or securely wrapped. Destination/import rules are separate.",
+          "zh": "TSA允许妥善套封或包裹的刀具托运；目的地及入境要求需另行核实。"
+        }
+      },
+      "sources": [
+        "tsa_knives"
+      ],
+      "effective_from": null,
+      "effective_to": null
+    },
+    {
+      "id": "tsa_liquid_cabin",
+      "scenes": [
+        "us_air"
+      ],
+      "categories": [
+        "liquid"
+      ],
+      "carry": [
+        "cabin"
+      ],
+      "required": [
+        "volume_ml",
+        "ordinary_liquid"
+      ],
+      "outcomes": [
+        {
+          "when": [
+            [
+              "ordinary_liquid",
+              "eq",
+              false
+            ]
+          ],
+          "status": "unknown",
+          "reason": {
+            "en": "Hazardous or special liquids need a substance-specific rule.",
+            "zh": "危险或特殊液体需按具体成分核实。"
+          }
+        },
+        {
+          "when": [
+            [
+              "volume_ml",
+              "gt",
+              100
+            ]
+          ],
+          "status": "prohibited",
+          "reason": {
+            "en": "Ordinary liquids in containers over 100 mL do not meet the TSA carry-on liquid rule. Medical and other exceptions need separate screening.",
+            "zh": "普通液体容器超过100毫升，不符合TSA随身液体要求；医疗等例外须另行核验。"
+          }
+        }
+      ],
+      "default": {
+        "status": "conditional",
+        "reason": {
+          "en": "Each container must be 100 mL or less, and all liquids must fit in one quart-sized bag. Additional screening may apply.",
+          "zh": "单体容器不超过100毫升，所有液体须装入一个夸脱大小袋中，可能需额外检查。"
+        }
+      },
+      "sources": [
+        "tsa_liquids"
+      ],
+      "effective_from": null,
+      "effective_to": null
+    },
+    {
+      "id": "us_air_battery_checked",
+      "scenes": [
+        "us_air"
+      ],
+      "categories": [
+        "power_bank",
+        "battery"
+      ],
+      "carry": [
+        "checked"
+      ],
+      "required": [],
+      "outcomes": [],
+      "default": {
+        "status": "prohibited",
+        "reason": {
+          "en": "Power banks and applicable spare lithium batteries cannot travel in checked baggage.",
+          "zh": "充电宝及适用的备用锂电池不得放入托运行李。"
+        }
+      },
+      "sources": [
+        "faa_batteries"
+      ],
+      "effective_from": null,
+      "effective_to": null
+    },
+    {
+      "id": "us_air_battery_cabin",
+      "scenes": [
+        "us_air"
+      ],
+      "categories": [
+        "power_bank",
+        "battery"
+      ],
+      "carry": [
+        "cabin"
+      ],
+      "required": [
+        "wh",
+        "label_clear",
+        "damaged",
+        "recalled"
+      ],
+      "outcomes": [
+        {
+          "when": [
+            [
+              "wh",
+              "gt",
+              160
+            ]
+          ],
+          "status": "prohibited",
+          "reason": {
+            "en": "Rated energy exceeds 160 Wh.",
+            "zh": "额定能量超过160Wh。"
+          }
+        },
+        {
+          "when": [
+            [
+              "damaged",
+              "eq",
+              true
+            ]
+          ],
+          "status": "unknown",
+          "reason": {
+            "en": "A damaged battery needs carrier safety review; do not pack or ship it as ordinary baggage.",
+            "zh": "损坏电池需承运方安全核验，不要按普通行李或包裹运输。"
+          }
+        },
+        {
+          "when": [
+            [
+              "recalled",
+              "eq",
+              true
+            ]
+          ],
+          "status": "unknown",
+          "reason": {
+            "en": "Check the recall notice and carrier restrictions; no clearance is provided.",
+            "zh": "需核对召回通知及承运方限制，本系统不提供放行结论。"
+          }
+        },
+        {
+          "when": [
+            [
+              "wh",
+              "gt",
+              100
+            ],
+            [
+              "quantity",
+              "gt",
+              2
+            ]
+          ],
+          "status": "prohibited",
+          "reason": {
+            "en": "More than two batteries above 100 Wh exceed the larger-battery allowance.",
+            "zh": "超过100Wh的电池多于两块，超过大容量电池数量限额。"
+          }
+        },
+        {
+          "when": [
+            [
+              "wh",
+              "gt",
+              100
+            ]
+          ],
+          "status": "conditional",
+          "reason": {
+            "en": "100–160 Wh batteries require airline approval, maximum two. Carrier-specific restrictions still apply.",
+            "zh": "超过100Wh且不超过160Wh需航司批准，最多两块；仍需核实航司附加要求。"
+          }
+        },
+        {
+          "when": [
+            [
+              "label_clear",
+              "eq",
+              false
+            ]
+          ],
+          "status": "unknown",
+          "reason": {
+            "en": "Rated energy cannot be confirmed from the label; request a clear label or operator assessment.",
+            "zh": "无法从标签确认额定能量，请补拍清晰标签或请运营方判定。"
+          }
+        }
+      ],
+      "default": {
+        "status": "conditional",
+        "reason": {
+          "en": "Up to 100 Wh under the checked conditions. Protect terminals, keep in the cabin, and confirm carrier-specific limits.",
+          "zh": "已确认条件下不超过100Wh；保护接点、随身携带并核实航司附加限制。"
+        }
+      },
+      "sources": [
+        "faa_batteries"
+      ],
+      "effective_from": null,
+      "effective_to": null
+    },
+    {
+      "id": "cn_air_battery_checked",
+      "scenes": [
+        "cn_air"
+      ],
+      "categories": [
+        "power_bank"
+      ],
+      "carry": [
+        "checked"
+      ],
+      "required": [],
+      "outcomes": [],
+      "default": {
+        "status": "prohibited",
+        "reason": {
+          "en": "Power banks and applicable spare lithium batteries cannot travel in checked baggage.",
+          "zh": "充电宝及适用的备用锂电池不得放入托运行李。"
+        }
+      },
+      "sources": [
+        "caac_power"
+      ],
+      "effective_from": null,
+      "effective_to": null
+    },
+    {
+      "id": "cn_air_battery_cabin",
+      "scenes": [
+        "cn_air"
+      ],
+      "categories": [
+        "power_bank"
+      ],
+      "carry": [
+        "cabin"
+      ],
+      "required": [
+        "wh",
+        "label_clear",
+        "damaged",
+        "recalled",
+        "ccc_clear"
+      ],
+      "outcomes": [
+        {
+          "when": [
+            [
+              "wh",
+              "gt",
+              160
+            ]
+          ],
+          "status": "prohibited",
+          "reason": {
+            "en": "Rated energy exceeds 160 Wh.",
+            "zh": "额定能量超过160Wh。"
+          }
+        },
+        {
+          "when": [
+            [
+              "damaged",
+              "eq",
+              true
+            ]
+          ],
+          "status": "unknown",
+          "reason": {
+            "en": "A damaged battery needs carrier safety review; do not pack or ship it as ordinary baggage.",
+            "zh": "损坏电池需承运方安全核验，不要按普通行李或包裹运输。"
+          }
+        },
+        {
+          "when": [
+            [
+              "recalled",
+              "eq",
+              true
+            ]
+          ],
+          "status": "unknown",
+          "reason": {
+            "en": "Check the recall notice and carrier restrictions; no clearance is provided.",
+            "zh": "需核对召回通知及承运方限制，本系统不提供放行结论。"
+          }
+        },
+        {
+          "when": [
+            [
+              "wh",
+              "gt",
+              100
+            ],
+            [
+              "quantity",
+              "gt",
+              2
+            ]
+          ],
+          "status": "prohibited",
+          "reason": {
+            "en": "More than two batteries above 100 Wh exceed the larger-battery allowance.",
+            "zh": "超过100Wh的电池多于两块，超过大容量电池数量限额。"
+          }
+        },
+        {
+          "when": [
+            [
+              "wh",
+              "gt",
+              100
+            ]
+          ],
+          "status": "conditional",
+          "reason": {
+            "en": "100–160 Wh batteries require airline approval, maximum two. Carrier-specific restrictions still apply.",
+            "zh": "超过100Wh且不超过160Wh需航司批准，最多两块；仍需核实航司附加要求。"
+          }
+        },
+        {
+          "when": [
+            [
+              "label_clear",
+              "eq",
+              false
+            ]
+          ],
+          "status": "unknown",
+          "reason": {
+            "en": "Rated energy cannot be confirmed from the label; request a clear label or operator assessment.",
+            "zh": "无法从标签确认额定能量，请补拍清晰标签或请运营方判定。"
+          }
+        },
+        {
+          "when": [
+            [
+              "ccc_clear",
+              "eq",
+              false
+            ]
+          ],
+          "status": "prohibited",
+          "reason": {
+            "en": "A clear CCC mark is required for power banks on mainland domestic flights.",
+            "zh": "中国境内航班要求充电宝具备清晰3C标识。"
+          }
+        },
+        {
+          "when": [
+            [
+              "recalled",
+              "eq",
+              true
+            ]
+          ],
+          "status": "prohibited",
+          "reason": {
+            "en": "Recalled power-bank models/batches are prohibited on mainland domestic flights.",
+            "zh": "被召回型号或批次充电宝禁止携带乘坐境内航班。"
+          }
+        }
+      ],
+      "default": {
+        "status": "conditional",
+        "reason": {
+          "en": "Up to 100 Wh under the checked conditions. Keep the power bank in the cabin, confirm carrier-specific limits, and do not use it during the flight.",
+          "zh": "已确认条件下不超过100Wh；充电宝须随身携带，核实航司附加限制，并且飞行中不得使用。"
+        }
+      },
+      "sources": [
+        "caac_power",
+        "caac_ccc"
+      ],
+      "effective_from": "2025-06-28",
+      "effective_to": null
+    },
+    {
+      "id": "rail_battery",
+      "scenes": [
+        "rail"
+      ],
+      "categories": [
+        "power_bank",
+        "battery"
+      ],
+      "carry": [
+        "person"
+      ],
+      "required": [
+        "wh",
+        "label_clear",
+        "damaged"
+      ],
+      "outcomes": [
+        {
+          "when": [
+            [
+              "wh",
+              "gt",
+              100
+            ]
+          ],
+          "status": "prohibited",
+          "reason": {
+            "en": "Railway carry-on batteries must not exceed 100 Wh per unit.",
+            "zh": "铁路随身携带电池单块额定能量不得超过100Wh。"
+          }
+        },
+        {
+          "when": [
+            [
+              "label_clear",
+              "eq",
+              false
+            ]
+          ],
+          "status": "prohibited",
+          "reason": {
+            "en": "Railway carry-on batteries must have clear markings.",
+            "zh": "铁路要求充电宝及锂电池标志清晰。"
+          }
+        },
+        {
+          "when": [
+            [
+              "damaged",
+              "eq",
+              true
+            ]
+          ],
+          "status": "unknown",
+          "reason": {
+            "en": "Damaged battery condition needs operator safety review.",
+            "zh": "电池损坏状态需运营方另行安全核实。"
+          }
+        }
+      ],
+      "default": {
+        "status": "allowed",
+        "reason": {
+          "en": "The clear-marking and per-unit 100 Wh railway conditions are met for this ordinary battery.",
+          "zh": "该普通电池满足铁路标志清晰且单块不超过100Wh的条件。"
+        }
+      },
+      "sources": [
+        "rail2022"
+      ],
+      "effective_from": "2022-07-01",
+      "effective_to": null
+    },
+    {
+      "id": "rail_knife",
+      "scenes": [
+        "rail"
+      ],
+      "categories": [
+        "knife"
+      ],
+      "carry": [
+        "person"
+      ],
+      "required": [
+        "ordinary_knife",
+        "blade_mm"
+      ],
+      "outcomes": [
+        {
+          "when": [
+            [
+              "ordinary_knife",
+              "eq",
+              false
+            ]
+          ],
+          "status": "unknown",
+          "reason": {
+            "en": "Do not infer controlled-weapon classification from blade length alone. Ask the operator.",
+            "zh": "不能仅凭刀刃长度判定是否属于管制器具，请向运营方核实。"
+          }
+        },
+        {
+          "when": [
+            [
+              "blade_mm",
+              "gt",
+              60
+            ]
+          ],
+          "status": "prohibited",
+          "reason": {
+            "en": "Listed household knives with blades longer than 60 mm are prohibited in carry-on railway baggage. This does not itself classify them as controlled knives.",
+            "zh": "目录内日用刀具刀刃超过60毫米禁止随身携带上火车，这不等同于认定为管制刀具。"
+          }
+        }
+      ],
+      "default": {
+        "status": "conditional",
+        "reason": {
+          "en": "This ordinary blade does not exceed the listed 60 mm threshold; other sharp-tool categories and temporary restrictions still need operator confirmation.",
+          "zh": "该普通刀刃未超过目录中的60毫米阈值，但其他锐器类别及临时限制仍需向运营方核实。"
+        }
+      },
+      "sources": [
+        "rail2022"
+      ],
+      "effective_from": "2022-07-01",
+      "effective_to": null
+    },
+    {
+      "id": "rail_knife_checked",
+      "scenes": [
+        "rail"
+      ],
+      "categories": [
+        "knife"
+      ],
+      "carry": [
+        "checked"
+      ],
+      "required": [
+        "ordinary_knife"
+      ],
+      "outcomes": [
+        {
+          "when": [
+            [
+              "ordinary_knife",
+              "eq",
+              false
+            ]
+          ],
+          "status": "unknown",
+          "reason": {
+            "en": "Controlled or specialist classification requires official confirmation.",
+            "zh": "管制或专业器具分类需官方核实。"
+          }
+        }
+      ],
+      "default": {
+        "status": "conditional",
+        "reason": {
+          "en": "Ordinary knives in the listed category may be checked. Confirm baggage service availability and acceptance before arriving; parcel courier rules are separate.",
+          "zh": "目录内普通刀具可按条件办理铁路托运，须提前确认业务及收运条件；快递规则另行核实。"
+        }
+      },
+      "sources": [
+        "rail2022"
+      ],
+      "effective_from": "2022-07-01",
+      "effective_to": null
+    },
+    {
+      "id": "rail_spray",
+      "scenes": [
+        "rail"
+      ],
+      "categories": [
+        "aerosol"
+      ],
+      "carry": [
+        "person"
+      ],
+      "required": [
+        "volume_ml",
+        "pressurized",
+        "toiletry",
+        "flammable"
+      ],
+      "outcomes": [
+        {
+          "when": [
+            [
+              "toiletry",
+              "eq",
+              false
+            ]
+          ],
+          "status": "unknown",
+          "reason": {
+            "en": "Industrial, pesticide or defence sprays need a substance-specific classification.",
+            "zh": "工业、农药或防身喷剂需按具体类别核实。"
+          }
+        },
+        {
+          "when": [
+            [
+              "pressurized",
+              "eq",
+              true
+            ],
+            [
+              "volume_ml",
+              "gt",
+              150
+            ]
+          ],
+          "status": "prohibited",
+          "reason": {
+            "en": "Pressurized toiletry containers may not exceed 150 mL each.",
+            "zh": "自喷压力日用品单体容器不得超过150毫升。"
+          }
+        },
+        {
+          "when": [
+            [
+              "pressurized",
+              "eq",
+              false
+            ],
+            [
+              "flammable",
+              "eq",
+              true
+            ],
+            [
+              "volume_ml",
+              "gt",
+              100
+            ]
+          ],
+          "status": "prohibited",
+          "reason": {
+            "en": "Flammable non-pressurized daily-use containers may not exceed 100 mL.",
+            "zh": "含易燃成分的非自喷压力日用品单体容器不得超过100毫升。"
+          }
+        },
+        {
+          "when": [
+            [
+              "quantity",
+              "gt",
+              1
+            ]
+          ],
+          "status": "prohibited",
+          "reason": {
+            "en": "Only one of each restricted spray type is allowed.",
+            "zh": "受限喷雾每种限带一件。"
+          }
+        }
+      ],
+      "default": {
+        "status": "conditional",
+        "reason": {
+          "en": "Confirm the exact product class: pressurized daily-use containers up to 150 mL each, one of each type, 600 mL combined. Flammable non-pressurized daily products: 100 mL, one per type.",
+          "zh": "需确认具体品类：自喷压力日用品单体150毫升以内、每种1件、累计600毫升；含易燃成分的非自喷日用品单体100毫升、每种1件。"
+        }
+      },
+      "sources": [
+        "rail2022"
+      ],
+      "effective_from": "2022-07-01",
+      "effective_to": null
+    },
+    {
+      "id": "rail_alcohol",
+      "scenes": [
+        "rail"
+      ],
+      "categories": [
+        "alcohol"
+      ],
+      "carry": [
+        "person"
+      ],
+      "required": [
+        "abv",
+        "volume_ml",
+        "sealed"
+      ],
+      "outcomes": [
+        {
+          "when": [
+            [
+              "abv",
+              "gt",
+              70
+            ]
+          ],
+          "status": "prohibited",
+          "reason": {
+            "en": "Alcoholic drinks above 70% ABV are prohibited.",
+            "zh": "酒精体积含量超过70%的酒类饮品禁止携带。"
+          }
+        },
+        {
+          "when": [
+            [
+              "sealed",
+              "eq",
+              false
+            ]
+          ],
+          "status": "unknown",
+          "reason": {
+            "en": "Packaging and label must be verified; unclear alcohol labels are prohibited.",
+            "zh": "需核实包装及标签；标志不清晰的酒类饮品禁止携带。"
+          }
+        }
+      ],
+      "default": {
+        "status": "conditional",
+        "reason": {
+          "en": "24–70% ABV drinks must be sealed and clearly labelled, no more than 3,000 mL combined. Other alcohol products require separate checks.",
+          "zh": "24%–70%酒类饮品须密封、标志清晰，累计不超过3000毫升；其他酒精产品需另查。"
+        }
+      },
+      "sources": [
+        "rail2022"
+      ],
+      "effective_from": "2022-07-01",
+      "effective_to": null
+    },
+    {
+      "id": "rail_lighter",
+      "scenes": [
+        "rail"
+      ],
+      "categories": [
+        "lighter"
+      ],
+      "carry": [
+        "person"
+      ],
+      "required": [
+        "ordinary_lighter"
+      ],
+      "outcomes": [
+        {
+          "when": [
+            [
+              "quantity",
+              "gt",
+              2
+            ]
+          ],
+          "status": "prohibited",
+          "reason": {
+            "en": "At most two ordinary lighters may be carried on railways.",
+            "zh": "铁路普通打火机最多携带2个。"
+          }
+        },
+        {
+          "when": [
+            [
+              "ordinary_lighter",
+              "eq",
+              false
+            ]
+          ],
+          "status": "unknown",
+          "reason": {
+            "en": "Torch lighters and fuel need a separate rule.",
+            "zh": "喷枪类打火机或燃料需单独核实。"
+          }
+        }
+      ],
+      "default": {
+        "status": "conditional",
+        "reason": {
+          "en": "At most two ordinary lighters; do not include lighter fuel. Temporary controls may differ.",
+          "zh": "普通打火机不超过2个，不含打火机燃料，临时管制可能不同。"
+        }
+      },
+      "sources": [
+        "rail2022"
+      ],
+      "effective_from": "2022-07-01",
+      "effective_to": null
+    },
+    {
+      "id": "beijing_subway_knife",
+      "scenes": [
+        "beijing_subway"
+      ],
+      "categories": [
+        "knife"
+      ],
+      "carry": [
+        "person"
+      ],
+      "required": [],
+      "outcomes": [],
+      "default": {
+        "status": "prohibited",
+        "reason": {
+          "en": "Sharp knives/tools in this category are prohibited at this checkpoint; this is not a legal controlled-weapon determination.",
+          "zh": "该类别锐利刀具或工具禁止带入此安检点；此结论不是管制器具法律认定。"
+        }
+      },
+      "sources": [
+        "bjmetro2015"
+      ],
+      "effective_from": null,
+      "effective_to": null
+    },
+    {
+      "id": "beijing_subway_flammable",
+      "scenes": [
+        "beijing_subway"
+      ],
+      "categories": [
+        "aerosol",
+        "liquid"
+      ],
+      "carry": [
+        "person"
+      ],
+      "required": [
+        "flammable"
+      ],
+      "outcomes": [
+        {
+          "when": [
+            [
+              "flammable",
+              "eq",
+              true
+            ]
+          ],
+          "status": "prohibited",
+          "reason": {
+            "en": "Daily-use products labelled flammable/explosive are prohibited here, regardless of a smaller travel size.",
+            "zh": "包装标注易燃、易爆的日用品禁止带入此处，换小容量不消除该限制。"
+          }
+        }
+      ],
+      "default": {
+        "status": "unknown",
+        "reason": {
+          "en": "No flame marking alone does not establish permission. Confirm the product contents with the venue.",
+          "zh": "没有火苗标识不能单独证明可携带，需向场所核实成分及类别。"
+        }
+      },
+      "sources": [
+        "bjmetro2015"
+      ],
+      "effective_from": null,
+      "effective_to": null
+    },
+    {
+      "id": "palace_knife",
+      "scenes": [
+        "palace"
+      ],
+      "categories": [
+        "knife"
+      ],
+      "carry": [
+        "person"
+      ],
+      "required": [],
+      "outcomes": [],
+      "default": {
+        "status": "prohibited",
+        "reason": {
+          "en": "Sharp knives/tools in this category are prohibited at this checkpoint; this is not a legal controlled-weapon determination.",
+          "zh": "该类别锐利刀具或工具禁止带入此安检点；此结论不是管制器具法律认定。"
+        }
+      },
+      "sources": [
+        "palace_items"
+      ],
+      "effective_from": null,
+      "effective_to": null
+    },
+    {
+      "id": "palace_flammable",
+      "scenes": [
+        "palace"
+      ],
+      "categories": [
+        "aerosol",
+        "liquid"
+      ],
+      "carry": [
+        "person"
+      ],
+      "required": [
+        "flammable"
+      ],
+      "outcomes": [
+        {
+          "when": [
+            [
+              "flammable",
+              "eq",
+              true
+            ]
+          ],
+          "status": "prohibited",
+          "reason": {
+            "en": "Daily-use products labelled flammable/explosive are prohibited here, regardless of a smaller travel size.",
+            "zh": "包装标注易燃、易爆的日用品禁止带入此处，换小容量不消除该限制。"
+          }
+        }
+      ],
+      "default": {
+        "status": "unknown",
+        "reason": {
+          "en": "No flame marking alone does not establish permission. Confirm the product contents with the venue.",
+          "zh": "没有火苗标识不能单独证明可携带，需向场所核实成分及类别。"
+        }
+      },
+      "sources": [
+        "palace_items"
+      ],
+      "effective_from": null,
+      "effective_to": null
+    },
+    {
+      "id": "metro_lighter",
+      "scenes": [
+        "beijing_subway"
+      ],
+      "categories": [
+        "lighter"
+      ],
+      "carry": [
+        "person"
+      ],
+      "required": [
+        "ordinary_lighter"
+      ],
+      "outcomes": [
+        {
+          "when": [
+            [
+              "quantity",
+              "gt",
+              4
+            ]
+          ],
+          "status": "prohibited",
+          "reason": {
+            "en": "Five or more lighters are prohibited on Beijing metro.",
+            "zh": "北京地铁禁止携带5个及以上打火机。"
+          }
+        },
+        {
+          "when": [
+            [
+              "ordinary_lighter",
+              "eq",
+              false
+            ]
+          ],
+          "status": "unknown",
+          "reason": {
+            "en": "Special lighter/fuel classification needs confirmation.",
+            "zh": "特殊打火机或燃料类别需另行核实。"
+          }
+        }
+      ],
+      "default": {
+        "status": "conditional",
+        "reason": {
+          "en": "Fewer than five ordinary lighters under this directory; confirm temporary controls.",
+          "zh": "此目录下普通打火机少于5个，仍需核实临时管制。"
+        }
+      },
+      "sources": [
+        "bjmetro2015"
+      ],
+      "effective_from": null,
+      "effective_to": null
+    },
+    {
+      "id": "palace_lighter",
+      "scenes": [
+        "palace"
+      ],
+      "categories": [
+        "lighter"
+      ],
+      "carry": [
+        "person"
+      ],
+      "required": [],
+      "outcomes": [],
+      "default": {
+        "status": "prohibited",
+        "reason": {
+          "en": "Lighters are prohibited at this venue.",
+          "zh": "该场所禁止携带打火机。"
+        }
+      },
+      "sources": [
+        "palace_items"
+      ],
+      "effective_from": null,
+      "effective_to": null
+    },
+    {
+      "id": "tiananmen_lighter",
+      "scenes": [
+        "tiananmen"
+      ],
+      "categories": [
+        "lighter"
+      ],
+      "carry": [
+        "person"
+      ],
+      "required": [],
+      "outcomes": [],
+      "default": {
+        "status": "prohibited",
+        "reason": {
+          "en": "Lighters are prohibited at this venue.",
+          "zh": "该场所禁止携带打火机。"
+        }
+      },
+      "sources": [
+        "tiananmen_visit"
+      ],
+      "effective_from": null,
+      "effective_to": null
+    },
+    {
+      "id": "palace_alcohol",
+      "scenes": [
+        "palace"
+      ],
+      "categories": [
+        "alcohol"
+      ],
+      "carry": [
+        "person"
+      ],
+      "required": [],
+      "outcomes": [],
+      "default": {
+        "status": "prohibited",
+        "reason": {
+          "en": "The Palace Museum prohibited-items list includes alcoholic drinks.",
+          "zh": "故宫禁止携带物品目录包含含酒精的饮品。"
+        }
+      },
+      "sources": [
+        "palace_items"
+      ],
+      "effective_from": null,
+      "effective_to": null
+    }
+  ],
+  "venue_notes": [
+    {
+      "scene": "palace",
+      "url": "https://www.dpm.org.cn/Visit.html",
+      "text": {
+        "en": "Use the Palace Museum's official booking channel and check the current passport and entry procedure. Palace admission and Tiananmen Square reservations are separate processes; verify any current exemption. Storage is only for items meeting the museum's acceptance conditions.",
+        "zh": "通过故宫官方渠道预约，并核实当前护照和入院流程。故宫与天安门广场预约是不同流程，是否有预约互认或豁免请查当日规定；仅符合故宫存包条件的物品可寄存。"
+      },
+      "review_status": "pending"
+    },
+    {
+      "scene": "tiananmen",
+      "url": "https://tamgw.beijing.gov.cn/zhengwugongkai/tzgg/202304/t20230410_2993773.html",
+      "text": {
+        "en": "Check the official Tiananmen Square reservation channel and attend at the booked time. Verify the current foreign-passport procedure and any event-day restrictions before visiting. This report does not confirm a reservation.",
+        "zh": "通过天安门广场官方预约渠道核实并按预约时段前往。出行前确认外籍护照办理流程及活动日临时管制；本报告不代表已预约。"
+      },
+      "review_status": "partial"
+    }
+  ]
+}
